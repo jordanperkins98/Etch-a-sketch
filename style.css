@@ -40,12 +40,11 @@ button{
 }
 
 .grid-container {
-
   display: flex;
   width: 600px;
   height: 600px;
   border-radius: 8px;
-  margin: 0 auto;
+  margin: 0;
   flex-wrap: wrap;
   gap: 0px;
   align-content: flex-start;
@@ -58,5 +57,13 @@ button{
     height: 37.5px;
     background-color: white;
     
+    
+}
+
+.middle{
+    margin-right: 8.5em;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
     
 }

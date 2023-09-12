@@ -1,7 +1,7 @@
 const container = document.querySelector('.grid-container')
 
 
-
+function initialGrid(){
 for (let i = 0; i < 16*16; i++){
     const div = document.createElement('div')
     div.classList.add('grid-item')
@@ -12,6 +12,8 @@ for (let i = 0; i < 16*16; i++){
     });
 
     container.appendChild(div)
+}
+
 }
 
 
@@ -35,3 +37,13 @@ function resizeGrid(){
     }
 
 }
+
+
+function clearGrid(){
+    const gridItems = document.querySelectorAll('.grid-item')
+    gridItems.forEach(item => {
+        item.style.backgroundColor = 'white'
+    })
+}
+
+initialGrid()
